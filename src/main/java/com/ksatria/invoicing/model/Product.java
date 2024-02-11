@@ -20,12 +20,13 @@ public class Product {
     @Required
     String description;
 
-    @ManyToOne(
-        fetch = FetchType.LAZY,
-        optional = true
-    )
+    @ManyToOne(fetch = FetchType.LAZY)
     @DescriptionsList
     Category category;
+
+    @ManyToOne(fetch=FetchType.LAZY)
+    @DescriptionsList
+    Author author;
 
     @Money // The price property is used to store money
     BigDecimal price;  // BigDecimal is typically used for money
