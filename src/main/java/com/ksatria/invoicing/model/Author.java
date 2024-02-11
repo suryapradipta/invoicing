@@ -1,12 +1,9 @@
 package com.ksatria.invoicing.model;
 
-import lombok.Getter;
-import lombok.Setter;
-import org.apache.logging.log4j.core.config.plugins.validation.constraints.Required;
-import org.hibernate.annotations.GenericGenerator;
-import org.openxava.annotations.DescriptionsList;
-import org.openxava.annotations.Hidden;
+import lombok.*;
 import org.openxava.annotations.ListProperties;
+import org.openxava.annotations.Required;
+import org.openxava.model.Identifiable;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -14,13 +11,7 @@ import java.util.Collection;
 @Entity
 @Getter
 @Setter
-public class Author {
-    @Id
-    @GeneratedValue(generator = "system-uuid")
-    @Hidden
-    @GenericGenerator(name = "system-uuid", strategy = "uuid")
-    @Column(length = 32)
-    String oid;
+public class Author extends Identifiable {
 
     @Column(length = 50)
     @Required
