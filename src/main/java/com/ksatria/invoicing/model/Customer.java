@@ -1,14 +1,8 @@
 package com.ksatria.invoicing.model;
 
-import lombok.Getter;
-import lombok.Setter;
-import org.openxava.annotations.Hidden;
-import org.openxava.annotations.NoFrame;
-import org.openxava.annotations.Required;
-import org.openxava.annotations.View;
-
+import lombok.*;
+import org.openxava.annotations.*;
 import javax.persistence.*;
-
 
 @Entity
 @Getter

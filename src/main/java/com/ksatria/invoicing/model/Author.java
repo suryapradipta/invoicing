@@ -1,8 +1,7 @@
 package com.ksatria.invoicing.model;
 
 import lombok.*;
-import org.openxava.annotations.ListProperties;
-import org.openxava.annotations.Required;
+import org.openxava.annotations.*;
 import org.openxava.model.Identifiable;
 
 import javax.persistence.*;

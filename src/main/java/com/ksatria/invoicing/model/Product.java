@@ -1,12 +1,10 @@
 package com.ksatria.invoicing.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.openxava.annotations.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-
 
 @Entity
 @Getter
