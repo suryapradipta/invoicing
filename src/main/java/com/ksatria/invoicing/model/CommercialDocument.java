@@ -37,8 +37,7 @@ abstract public class CommercialDocument extends Identifiable {
     @DefaultValueCalculator(CurrentLocalDateCalculator.class) // Current date
     LocalDate date;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    // customer is required
+    @ManyToOne(fetch = FetchType.LAZY)
     @ReferenceView("Simple") // The view named 'Simple' is used to display this reference
     Customer customer;
 

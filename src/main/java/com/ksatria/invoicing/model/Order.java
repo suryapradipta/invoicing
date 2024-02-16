@@ -2,9 +2,7 @@ package com.ksatria.invoicing.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.openxava.annotations.Hidden;
-import org.openxava.annotations.ReferenceView;
-import org.openxava.annotations.View;
+import org.openxava.annotations.*;
 
 import javax.persistence.*;
 

@@ -12,8 +12,6 @@ import java.util.Collection;
 @Setter
 public class Author extends Identifiable {
 
-    @Column(length = 50)
-    @Required
     String name;
 
     @OneToMany(mappedBy = "author")

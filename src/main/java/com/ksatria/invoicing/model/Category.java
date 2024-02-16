@@ -9,6 +9,5 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class Category extends Identifiable {
-    @Column(length = 50)
     String description;
 }
